@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-07-08T14:50:59.864995",
+  "status_code": 400,
+  "reason": "Bad Request",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+  "headers": {
+    "set-cookie": "JSESSIONID=8FCC8A644879F812207870BF69BF88BD; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_0_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 05:50:59 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "8FCC8A644879F812207870BF69BF88BD",
+    "SERVERID": "IngestionVM_0_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 8.031694,
+  "text": "{\"title\":\"Message Argument Not Valid\",\"status\":400,\"detail\":\"Field input error on 'config' may not be null. Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ds.apollo.dfs.generated.model.Storage> com.ds.apollo.dfs.server.storage.DFSStorageAPI.createStorage(com.ds.apollo.dfs.generated.model.Storage): [Field error in object 'storage' on field 'config': rejected value [null]; codes [NotNull.storage.config,NotNull.config,NotNull.com.ds.apollo.dfs.generated.model.ObjectStorageConfig,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [storage.config,config]; arguments []; default message [config]]; default message [may not be null]] \",\"instance\":\"uri=/data-factory/api/1/storage\"}",
+  "json_response": {
+    "title": "Message Argument Not Valid",
+    "status": 400,
+    "detail": "Field input error on 'config' may not be null. Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ds.apollo.dfs.generated.model.Storage> com.ds.apollo.dfs.server.storage.DFSStorageAPI.createStorage(com.ds.apollo.dfs.generated.model.Storage): [Field error in object 'storage' on field 'config': rejected value [null]; codes [NotNull.storage.config,NotNull.config,NotNull.com.ds.apollo.dfs.generated.model.ObjectStorageConfig,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [storage.config,config]; arguments []; default message [config]]; default message [may not be null]] ",
+    "instance": "uri=/data-factory/api/1/storage"
+  },
+  "content_base64": "eyJ0aXRsZSI6Ik1lc3NhZ2UgQXJndW1lbnQgTm90IFZhbGlkIiwic3RhdHVzIjo0MDAsImRldGFpbCI6IkZpZWxkIGlucHV0IGVycm9yIG9uICdjb25maWcnIG1heSBub3QgYmUgbnVsbC4gVmFsaWRhdGlvbiBmYWlsZWQgZm9yIGFyZ3VtZW50IFswXSBpbiBwdWJsaWMgb3JnLnNwcmluZ2ZyYW1ld29yay5odHRwLlJlc3BvbnNlRW50aXR5PGNvbS5kcy5hcG9sbG8uZGZzLmdlbmVyYXRlZC5tb2RlbC5TdG9yYWdlPiBjb20uZHMuYXBvbGxvLmRmcy5zZXJ2ZXIuc3RvcmFnZS5ERlNTdG9yYWdlQVBJLmNyZWF0ZVN0b3JhZ2UoY29tLmRzLmFwb2xsby5kZnMuZ2VuZXJhdGVkLm1vZGVsLlN0b3JhZ2UpOiBbRmllbGQgZXJyb3IgaW4gb2JqZWN0ICdzdG9yYWdlJyBvbiBmaWVsZCAnY29uZmlnJzogcmVqZWN0ZWQgdmFsdWUgW251bGxdOyBjb2RlcyBbTm90TnVsbC5zdG9yYWdlLmNvbmZpZyxOb3ROdWxsLmNvbmZpZyxOb3ROdWxsLmNvbS5kcy5hcG9sbG8uZGZzLmdlbmVyYXRlZC5tb2RlbC5PYmplY3RTdG9yYWdlQ29uZmlnLE5vdE51bGxdOyBhcmd1bWVudHMgW29yZy5zcHJpbmdmcmFtZXdvcmsuY29udGV4dC5zdXBwb3J0LkRlZmF1bHRNZXNzYWdlU291cmNlUmVzb2x2YWJsZTogY29kZXMgW3N0b3JhZ2UuY29uZmlnLGNvbmZpZ107IGFyZ3VtZW50cyBbXTsgZGVmYXVsdCBtZXNzYWdlIFtjb25maWddXTsgZGVmYXVsdCBtZXNzYWdlIFttYXkgbm90IGJlIG51bGxdXSAiLCJpbnN0YW5jZSI6InVyaT0vZGF0YS1mYWN0b3J5L2FwaS8xL3N0b3JhZ2UifQ==",
+  "content_length": 766,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "212",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "{\"@class\": \"ObjectStorage\", \"name\": \"DATASET-01\", \"description\": \"REST API \\ud14c\\uc2a4\\ud2b8\\ub85c \\uc0dd\\uc131\\ud55c \\ud30c\\uc77c\\uc2a4\\ud1a0\\ub9ac\\uc9c0. \\uc0ad\\uc81c\\ud560 \\uac83\", \"resourceId\": \"DATASET-01\"}"
+  }
+}

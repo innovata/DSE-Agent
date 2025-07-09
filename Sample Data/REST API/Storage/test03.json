@@ -1,0 +1,186 @@
+{
+  "timestamp": "2025-07-08T15:40:39.592633",
+  "status_code": 200,
+  "reason": "OK",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage/filter",
+  "headers": {
+    "set-cookie": "JSESSIONID=57687CE9FF7ABA3BDD1E0573D9371816; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_0_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 06:40:38 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "57687CE9FF7ABA3BDD1E0573D9371816",
+    "SERVERID": "IngestionVM_0_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 12.823745,
+  "text": "{\"cards\":[{\"id\":\"82d1b167-bf76-4567-9cfb-eb5a543fcb37\",\"resourceId\":\"DATASET-01\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"82d1b167-bf76-4567-9cfb-eb5a543fcb37\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"DATASET-01\",\"creator\":\"jle69_gmail\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1751954756480,\"lastModified\":1751954756485,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"d27534ab-e09f-492a-a75a-223e97c390f0\",\"resourceId\":\"ETH94.TESTDATASET\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"d27534ab-e09f-492a-a75a-223e97c390f0\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"ETH94.TESTDATASET\",\"creator\":\"eomtaehyun\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1734419170856,\"lastModified\":1734419170852,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"ef7f39eb-3461-4ff1-a9c5-5c29ffd49145\",\"resourceId\":\"ETH_ICTPEOPLE_DATASET_SGI_N\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"ef7f39eb-3461-4ff1-a9c5-5c29ffd49145\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"ETH_ICTPEOPLE_DATASET_SGI_N\",\"creator\":\"eomtaehyun\",\"kind\":\"Storage\",\"type\":\"IndexUnit\",\"created\":1734481912645,\"lastModified\":1734481912640,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"3b0223d4-e2f0-47d3-9bcd-f58a20340f49\",\"resourceId\":\"HJN15.DSE_Training_1216.DATASET1\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"3b0223d4-e2f0-47d3-9bcd-f58a20340f49\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"HJN15.DSE_Training_1216.DATASET1\",\"creator\":\"hjn15\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1734327134516,\"lastModified\":1734327134512,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"680c55e0-3a1a-4709-a97f-e20fc46d4bdb\",\"resourceId\":\"JLE69.DATASET\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"680c55e0-3a1a-4709-a97f-e20fc46d4bdb\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"JLE69.DATASET\",\"creator\":\"jle69\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1734918824929,\"lastModified\":1734918824918,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"2eda8536-04bb-482e-88f7-e44188756889\",\"resourceId\":\"JLE69.EPC.DATASET\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"2eda8536-04bb-482e-88f7-e44188756889\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"JLE69.EPC.DATASET\",\"creator\":\"N/A\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1736312426053,\"lastModified\":1736312426045,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"54291406-6758-48fd-88de-1c17ea9cf53c\",\"resourceId\":\"JLE69.SECSVC.DATASET\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"54291406-6758-48fd-88de-1c17ea9cf53c\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"JLE69.SECSVC.DATASET\",\"creator\":\"jle69\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1730444239179,\"lastModified\":1730444239175,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}},{\"id\":\"fafe2703-8369-42c0-ac0e-4ba6ebeb67f7\",\"resourceId\":\"JLE69.SL.DATASET\",\"projectId\":\"dp-global-000000\",\"resourceUUID\":\"fafe2703-8369-42c0-ac0e-4ba6ebeb67f7\",\"workspaceId\":\"dw-global-000000-default\",\"name\":\"JLE69.SL.DATASET\",\"creator\":\"jle69\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"created\":1731309594592,\"lastModified\":1731309594497,\"permissions\":{\"read\":true,\"write\":true,\"execute\":true}}]}",
+  "json_response": {
+    "cards": [
+      {
+        "id": "82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+        "resourceId": "DATASET-01",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+        "workspaceId": "dw-global-000000-default",
+        "name": "DATASET-01",
+        "creator": "jle69_gmail",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1751954756480,
+        "lastModified": 1751954756485,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "d27534ab-e09f-492a-a75a-223e97c390f0",
+        "resourceId": "ETH94.TESTDATASET",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "d27534ab-e09f-492a-a75a-223e97c390f0",
+        "workspaceId": "dw-global-000000-default",
+        "name": "ETH94.TESTDATASET",
+        "creator": "eomtaehyun",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1734419170856,
+        "lastModified": 1734419170852,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "ef7f39eb-3461-4ff1-a9c5-5c29ffd49145",
+        "resourceId": "ETH_ICTPEOPLE_DATASET_SGI_N",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "ef7f39eb-3461-4ff1-a9c5-5c29ffd49145",
+        "workspaceId": "dw-global-000000-default",
+        "name": "ETH_ICTPEOPLE_DATASET_SGI_N",
+        "creator": "eomtaehyun",
+        "kind": "Storage",
+        "type": "IndexUnit",
+        "created": 1734481912645,
+        "lastModified": 1734481912640,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "3b0223d4-e2f0-47d3-9bcd-f58a20340f49",
+        "resourceId": "HJN15.DSE_Training_1216.DATASET1",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "3b0223d4-e2f0-47d3-9bcd-f58a20340f49",
+        "workspaceId": "dw-global-000000-default",
+        "name": "HJN15.DSE_Training_1216.DATASET1",
+        "creator": "hjn15",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1734327134516,
+        "lastModified": 1734327134512,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "680c55e0-3a1a-4709-a97f-e20fc46d4bdb",
+        "resourceId": "JLE69.DATASET",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "680c55e0-3a1a-4709-a97f-e20fc46d4bdb",
+        "workspaceId": "dw-global-000000-default",
+        "name": "JLE69.DATASET",
+        "creator": "jle69",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1734918824929,
+        "lastModified": 1734918824918,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "2eda8536-04bb-482e-88f7-e44188756889",
+        "resourceId": "JLE69.EPC.DATASET",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "2eda8536-04bb-482e-88f7-e44188756889",
+        "workspaceId": "dw-global-000000-default",
+        "name": "JLE69.EPC.DATASET",
+        "creator": "N/A",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1736312426053,
+        "lastModified": 1736312426045,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "54291406-6758-48fd-88de-1c17ea9cf53c",
+        "resourceId": "JLE69.SECSVC.DATASET",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "54291406-6758-48fd-88de-1c17ea9cf53c",
+        "workspaceId": "dw-global-000000-default",
+        "name": "JLE69.SECSVC.DATASET",
+        "creator": "jle69",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1730444239179,
+        "lastModified": 1730444239175,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      },
+      {
+        "id": "fafe2703-8369-42c0-ac0e-4ba6ebeb67f7",
+        "resourceId": "JLE69.SL.DATASET",
+        "projectId": "dp-global-000000",
+        "resourceUUID": "fafe2703-8369-42c0-ac0e-4ba6ebeb67f7",
+        "workspaceId": "dw-global-000000-default",
+        "name": "JLE69.SL.DATASET",
+        "creator": "jle69",
+        "kind": "Storage",
+        "type": "ObjectStorage",
+        "created": 1731309594592,
+        "lastModified": 1731309594497,
+        "permissions": {
+          "read": true,
+          "write": true,
+          "execute": true
+        }
+      }
+    ]
+  },
+  "content_base64": "eyJjYXJkcyI6W3siaWQiOiI4MmQxYjE2Ny1iZjc2LTQ1NjctOWNmYi1lYjVhNTQzZmNiMzciLCJyZXNvdXJjZUlkIjoiREFUQVNFVC0wMSIsInByb2plY3RJZCI6ImRwLWdsb2JhbC0wMDAwMDAiLCJyZXNvdXJjZVVVSUQiOiI4MmQxYjE2Ny1iZjc2LTQ1NjctOWNmYi1lYjVhNTQzZmNiMzciLCJ3b3Jrc3BhY2VJZCI6ImR3LWdsb2JhbC0wMDAwMDAtZGVmYXVsdCIsIm5hbWUiOiJEQVRBU0VULTAxIiwiY3JlYXRvciI6ImpsZTY5X2dtYWlsIiwia2luZCI6IlN0b3JhZ2UiLCJ0eXBlIjoiT2JqZWN0U3RvcmFnZSIsImNyZWF0ZWQiOjE3NTE5NTQ3NTY0ODAsImxhc3RNb2RpZmllZCI6MTc1MTk1NDc1NjQ4NSwicGVybWlzc2lvbnMiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOnRydWUsImV4ZWN1dGUiOnRydWV9fSx7ImlkIjoiZDI3NTM0YWItZTA5Zi00OTJhLWE3NWEtMjIzZTk3YzM5MGYwIiwicmVzb3VyY2VJZCI6IkVUSDk0LlRFU1REQVRBU0VUIiwicHJvamVjdElkIjoiZHAtZ2xvYmFsLTAwMDAwMCIsInJlc291cmNlVVVJRCI6ImQyNzUzNGFiLWUwOWYtNDkyYS1hNzVhLTIyM2U5N2MzOTBmMCIsIndvcmtzcGFjZUlkIjoiZHctZ2xvYmFsLTAwMDAwMC1kZWZhdWx0IiwibmFtZSI6IkVUSDk0LlRFU1REQVRBU0VUIiwiY3JlYXRvciI6ImVvbXRhZWh5dW4iLCJraW5kIjoiU3RvcmFnZSIsInR5cGUiOiJPYmplY3RTdG9yYWdlIiwiY3JlYXRlZCI6MTczNDQxOTE3MDg1NiwibGFzdE1vZGlmaWVkIjoxNzM0NDE5MTcwODUyLCJwZXJtaXNzaW9ucyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6dHJ1ZSwiZXhlY3V0ZSI6dHJ1ZX19LHsiaWQiOiJlZjdmMzllYi0zNDYxLTRmZjEtYTljNS01YzI5ZmZkNDkxNDUiLCJyZXNvdXJjZUlkIjoiRVRIX0lDVFBFT1BMRV9EQVRBU0VUX1NHSV9OIiwicHJvamVjdElkIjoiZHAtZ2xvYmFsLTAwMDAwMCIsInJlc291cmNlVVVJRCI6ImVmN2YzOWViLTM0NjEtNGZmMS1hOWM1LTVjMjlmZmQ0OTE0NSIsIndvcmtzcGFjZUlkIjoiZHctZ2xvYmFsLTAwMDAwMC1kZWZhdWx0IiwibmFtZSI6IkVUSF9JQ1RQRU9QTEVfREFUQVNFVF9TR0lfTiIsImNyZWF0b3IiOiJlb210YWVoeXVuIiwia2luZCI6IlN0b3JhZ2UiLCJ0eXBlIjoiSW5kZXhVbml0IiwiY3JlYXRlZCI6MTczNDQ4MTkxMjY0NSwibGFzdE1vZGlmaWVkIjoxNzM0NDgxOTEyNjQwLCJwZXJtaXNzaW9ucyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6dHJ1ZSwiZXhlY3V0ZSI6dHJ1ZX19LHsiaWQiOiIzYjAyMjNkNC1lMmYwLTQ3ZDMtOWJjZC1mNThhMjAzNDBmNDkiLCJyZXNvdXJjZUlkIjoiSEpOMTUuRFNFX1RyYWluaW5nXzEyMTYuREFUQVNFVDEiLCJwcm9qZWN0SWQiOiJkcC1nbG9iYWwtMDAwMDAwIiwicmVzb3VyY2VVVUlEIjoiM2IwMjIzZDQtZTJmMC00N2QzLTliY2QtZjU4YTIwMzQwZjQ5Iiwid29ya3NwYWNlSWQiOiJkdy1nbG9iYWwtMDAwMDAwLWRlZmF1bHQiLCJuYW1lIjoiSEpOMTUuRFNFX1RyYWluaW5nXzEyMTYuREFUQVNFVDEiLCJjcmVhdG9yIjoiaGpuMTUiLCJraW5kIjoiU3RvcmFnZSIsInR5cGUiOiJPYmplY3RTdG9yYWdlIiwiY3JlYXRlZCI6MTczNDMyNzEzNDUxNiwibGFzdE1vZGlmaWVkIjoxNzM0MzI3MTM0NTEyLCJwZXJtaXNzaW9ucyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6dHJ1ZSwiZXhlY3V0ZSI6dHJ1ZX19LHsiaWQiOiI2ODBjNTVlMC0zYTFhLTQ3MDktYTk3Zi1lMjBmYzQ2ZDRiZGIiLCJyZXNvdXJjZUlkIjoiSkxFNjkuREFUQVNFVCIsInByb2plY3RJZCI6ImRwLWdsb2JhbC0wMDAwMDAiLCJyZXNvdXJjZVVVSUQiOiI2ODBjNTVlMC0zYTFhLTQ3MDktYTk3Zi1lMjBmYzQ2ZDRiZGIiLCJ3b3Jrc3BhY2VJZCI6ImR3LWdsb2JhbC0wMDAwMDAtZGVmYXVsdCIsIm5hbWUiOiJKTEU2OS5EQVRBU0VUIiwiY3JlYXRvciI6ImpsZTY5Iiwia2luZCI6IlN0b3JhZ2UiLCJ0eXBlIjoiT2JqZWN0U3RvcmFnZSIsImNyZWF0ZWQiOjE3MzQ5MTg4MjQ5MjksImxhc3RNb2RpZmllZCI6MTczNDkxODgyNDkxOCwicGVybWlzc2lvbnMiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOnRydWUsImV4ZWN1dGUiOnRydWV9fSx7ImlkIjoiMmVkYTg1MzYtMDRiYi00ODJlLTg4ZjctZTQ0MTg4NzU2ODg5IiwicmVzb3VyY2VJZCI6IkpMRTY5LkVQQy5EQVRBU0VUIiwicHJvamVjdElkIjoiZHAtZ2xvYmFsLTAwMDAwMCIsInJlc291cmNlVVVJRCI6IjJlZGE4NTM2LTA0YmItNDgyZS04OGY3LWU0NDE4ODc1Njg4OSIsIndvcmtzcGFjZUlkIjoiZHctZ2xvYmFsLTAwMDAwMC1kZWZhdWx0IiwibmFtZSI6IkpMRTY5LkVQQy5EQVRBU0VUIiwiY3JlYXRvciI6Ik4vQSIsImtpbmQiOiJTdG9yYWdlIiwidHlwZSI6Ik9iamVjdFN0b3JhZ2UiLCJjcmVhdGVkIjoxNzM2MzEyNDI2MDUzLCJsYXN0TW9kaWZpZWQiOjE3MzYzMTI0MjYwNDUsInBlcm1pc3Npb25zIjp7InJlYWQiOnRydWUsIndyaXRlIjp0cnVlLCJleGVjdXRlIjp0cnVlfX0seyJpZCI6IjU0MjkxNDA2LTY3NTgtNDhmZC04OGRlLTFjMTdlYTljZjUzYyIsInJlc291cmNlSWQiOiJKTEU2OS5TRUNTVkMuREFUQVNFVCIsInByb2plY3RJZCI6ImRwLWdsb2JhbC0wMDAwMDAiLCJyZXNvdXJjZVVVSUQiOiI1NDI5MTQwNi02NzU4LTQ4ZmQtODhkZS0xYzE3ZWE5Y2Y1M2MiLCJ3b3Jrc3BhY2VJZCI6ImR3LWdsb2JhbC0wMDAwMDAtZGVmYXVsdCIsIm5hbWUiOiJKTEU2OS5TRUNTVkMuREFUQVNFVCIsImNyZWF0b3IiOiJqbGU2OSIsImtpbmQiOiJTdG9yYWdlIiwidHlwZSI6Ik9iamVjdFN0b3JhZ2UiLCJjcmVhdGVkIjoxNzMwNDQ0MjM5MTc5LCJsYXN0TW9kaWZpZWQiOjE3MzA0NDQyMzkxNzUsInBlcm1pc3Npb25zIjp7InJlYWQiOnRydWUsIndyaXRlIjp0cnVlLCJleGVjdXRlIjp0cnVlfX0seyJpZCI6ImZhZmUyNzAzLTgzNjktNDJjMC1hYzBlLTRiYTZlYmViNjdmNyIsInJlc291cmNlSWQiOiJKTEU2OS5TTC5EQVRBU0VUIiwicHJvamVjdElkIjoiZHAtZ2xvYmFsLTAwMDAwMCIsInJlc291cmNlVVVJRCI6ImZhZmUyNzAzLTgzNjktNDJjMC1hYzBlLTRiYTZlYmViNjdmNyIsIndvcmtzcGFjZUlkIjoiZHctZ2xvYmFsLTAwMDAwMC1kZWZhdWx0IiwibmFtZSI6IkpMRTY5LlNMLkRBVEFTRVQiLCJjcmVhdG9yIjoiamxlNjkiLCJraW5kIjoiU3RvcmFnZSIsInR5cGUiOiJPYmplY3RTdG9yYWdlIiwiY3JlYXRlZCI6MTczMTMwOTU5NDU5MiwibGFzdE1vZGlmaWVkIjoxNzMxMzA5NTk0NDk3LCJwZXJtaXNzaW9ucyI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6dHJ1ZSwiZXhlY3V0ZSI6dHJ1ZX19XX0=",
+  "content_length": 3245,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage/filter",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "131",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "{\"types\": [\"IndexUnit\", \"ObjectStorage\"], \"top\": 50, \"skip\": 0, \"nameFilter\": \"DATASET\", \"workspaceId\": \"dw-global-000000-default\"}"
+  }
+}

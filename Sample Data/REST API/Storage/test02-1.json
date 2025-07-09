@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-07-08T17:35:18.536329",
+  "status_code": 201,
+  "reason": "Created",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+  "headers": {
+    "set-cookie": "JSESSIONID=FC8128D4437DA86BDDDC0F9E9B288AA0; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_1_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 08:35:18 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "FC8128D4437DA86BDDDC0F9E9B288AA0",
+    "SERVERID": "IngestionVM_1_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 34.301033,
+  "text": "{\"@class\":\"ObjectStorage\",\"resourceId\":\"TestDATASET-01\",\"name\":\"TestDATASET-01\",\"description\":\"REST API 테스트로 생성한 파일스토리지. 삭제할 것\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"resourcePath\":\"Storage/TestDATASET-01.json\",\"resourceUUID\":\"0a28ee53-4def-4c92-ba75-87537d83185f\",\"projectId\":\"dp-global-000000\",\"workspaceId\":\"dw-global-000000-default\",\"tenant\":\"R1132100527066\",\"created\":\"2025-07-08T08:35:17.406855Z\",\"modified\":\"2025-07-08T08:35:17.408689Z\",\"creator\":\"jle69_gmail\",\"ceStamp\":\"cb024ee1-2409-48df-9e92-ddd5a5b74230\",\"id\":\"0a28ee53-4def-4c92-ba75-87537d83185f\",\"config\":{\"delegations\":[{\"name\":\"SemanticGraphIndex.DOSAccount.2\",\"permission\":\"read\"},{\"name\":\"SemanticGraphIndex.DOSAccount.2\",\"permission\":\"write\"},{\"name\":\"PPES.DosAccount\",\"permission\":\"execute\"},{\"name\":\"DatasetGovernance\",\"permission\":\"read\"}]}}",
+  "json_response": {
+    "@class": "ObjectStorage",
+    "resourceId": "TestDATASET-01",
+    "name": "TestDATASET-01",
+    "description": "REST API 테스트로 생성한 파일스토리지. 삭제할 것",
+    "kind": "Storage",
+    "type": "ObjectStorage",
+    "resourcePath": "Storage/TestDATASET-01.json",
+    "resourceUUID": "0a28ee53-4def-4c92-ba75-87537d83185f",
+    "projectId": "dp-global-000000",
+    "workspaceId": "dw-global-000000-default",
+    "tenant": "R1132100527066",
+    "created": "2025-07-08T08:35:17.406855Z",
+    "modified": "2025-07-08T08:35:17.408689Z",
+    "creator": "jle69_gmail",
+    "ceStamp": "cb024ee1-2409-48df-9e92-ddd5a5b74230",
+    "id": "0a28ee53-4def-4c92-ba75-87537d83185f",
+    "config": {
+      "delegations": [
+        {
+          "name": "SemanticGraphIndex.DOSAccount.2",
+          "permission": "read"
+        },
+        {
+          "name": "SemanticGraphIndex.DOSAccount.2",
+          "permission": "write"
+        },
+        {
+          "name": "PPES.DosAccount",
+          "permission": "execute"
+        },
+        {
+          "name": "DatasetGovernance",
+          "permission": "read"
+        }
+      ]
+    }
+  },
+  "content_base64": "eyJAY2xhc3MiOiJPYmplY3RTdG9yYWdlIiwicmVzb3VyY2VJZCI6IlRlc3REQVRBU0VULTAxIiwibmFtZSI6IlRlc3REQVRBU0VULTAxIiwiZGVzY3JpcHRpb24iOiJSRVNUIEFQSSDthYzsiqTtirjroZwg7IOd7ISx7ZWcIO2MjOydvOyKpO2GoOumrOyngC4g7IKt7KCc7ZWgIOqygyIsImtpbmQiOiJTdG9yYWdlIiwidHlwZSI6Ik9iamVjdFN0b3JhZ2UiLCJyZXNvdXJjZVBhdGgiOiJTdG9yYWdlL1Rlc3REQVRBU0VULTAxLmpzb24iLCJyZXNvdXJjZVVVSUQiOiIwYTI4ZWU1My00ZGVmLTRjOTItYmE3NS04NzUzN2Q4MzE4NWYiLCJwcm9qZWN0SWQiOiJkcC1nbG9iYWwtMDAwMDAwIiwid29ya3NwYWNlSWQiOiJkdy1nbG9iYWwtMDAwMDAwLWRlZmF1bHQiLCJ0ZW5hbnQiOiJSMTEzMjEwMDUyNzA2NiIsImNyZWF0ZWQiOiIyMDI1LTA3LTA4VDA4OjM1OjE3LjQwNjg1NVoiLCJtb2RpZmllZCI6IjIwMjUtMDctMDhUMDg6MzU6MTcuNDA4Njg5WiIsImNyZWF0b3IiOiJqbGU2OV9nbWFpbCIsImNlU3RhbXAiOiJjYjAyNGVlMS0yNDA5LTQ4ZGYtOWU5Mi1kZGQ1YTViNzQyMzAiLCJpZCI6IjBhMjhlZTUzLTRkZWYtNGM5Mi1iYTc1LTg3NTM3ZDgzMTg1ZiIsImNvbmZpZyI6eyJkZWxlZ2F0aW9ucyI6W3sibmFtZSI6IlNlbWFudGljR3JhcGhJbmRleC5ET1NBY2NvdW50LjIiLCJwZXJtaXNzaW9uIjoicmVhZCJ9LHsibmFtZSI6IlNlbWFudGljR3JhcGhJbmRleC5ET1NBY2NvdW50LjIiLCJwZXJtaXNzaW9uIjoid3JpdGUifSx7Im5hbWUiOiJQUEVTLkRvc0FjY291bnQiLCJwZXJtaXNzaW9uIjoiZXhlY3V0ZSJ9LHsibmFtZSI6IkRhdGFzZXRHb3Zlcm5hbmNlIiwicGVybWlzc2lvbiI6InJlYWQifV19fQ==",
+  "content_length": 850,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "234",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "{\"@class\": \"ObjectStorage\", \"name\": \"TestDATASET-01\", \"description\": \"REST API \\ud14c\\uc2a4\\ud2b8\\ub85c \\uc0dd\\uc131\\ud55c \\ud30c\\uc77c\\uc2a4\\ud1a0\\ub9ac\\uc9c0. \\uc0ad\\uc81c\\ud560 \\uac83\", \"resourceId\": \"TestDATASET-01\", \"config\": {}}"
+  }
+}

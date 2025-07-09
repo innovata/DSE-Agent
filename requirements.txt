@@ -1,0 +1,7 @@
+ipykernel
+setuptools
+pandas
+openpyxl
+xlrd
+msoffcrypto-tool
+pymongo 

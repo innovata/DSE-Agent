@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-07-08T15:48:35.412764",
+  "status_code": 200,
+  "reason": "OK",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage/82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+  "headers": {
+    "set-cookie": "JSESSIONID=756E17A9943F04361167E504B522811B; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_1_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 06:48:34 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "756E17A9943F04361167E504B522811B",
+    "SERVERID": "IngestionVM_1_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 12.972597,
+  "text": "{\"@class\":\"ObjectStorage\",\"resourceId\":\"DATASET-01\",\"name\":\"DATASET-01\",\"description\":\"REST API 테스트로 생성한 파일스토리지. 삭제할 것\",\"kind\":\"Storage\",\"type\":\"ObjectStorage\",\"resourcePath\":\"Storage/DATASET-01.json\",\"resourceUUID\":\"82d1b167-bf76-4567-9cfb-eb5a543fcb37\",\"projectId\":\"dp-global-000000\",\"workspaceId\":\"dw-global-000000-default\",\"tenant\":\"R1132100527066\",\"created\":\"2025-07-08T06:05:56.480765Z\",\"modified\":\"2025-07-08T06:05:56.485421Z\",\"creator\":\"jle69_gmail\",\"ceStamp\":\"e8d81429-0205-45c2-87ea-083196f4ae0f\",\"id\":\"82d1b167-bf76-4567-9cfb-eb5a543fcb37\",\"config\":{\"bucket\":\"dataset01\",\"delegations\":[{\"name\":\"SemanticGraphIndex.DOSAccount.2\",\"permission\":\"read\"},{\"name\":\"SemanticGraphIndex.DOSAccount.2\",\"permission\":\"write\"},{\"name\":\"PPES.DosAccount\",\"permission\":\"execute\"},{\"name\":\"DatasetGovernance\",\"permission\":\"read\"}]}}",
+  "json_response": {
+    "@class": "ObjectStorage",
+    "resourceId": "DATASET-01",
+    "name": "DATASET-01",
+    "description": "REST API 테스트로 생성한 파일스토리지. 삭제할 것",
+    "kind": "Storage",
+    "type": "ObjectStorage",
+    "resourcePath": "Storage/DATASET-01.json",
+    "resourceUUID": "82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+    "projectId": "dp-global-000000",
+    "workspaceId": "dw-global-000000-default",
+    "tenant": "R1132100527066",
+    "created": "2025-07-08T06:05:56.480765Z",
+    "modified": "2025-07-08T06:05:56.485421Z",
+    "creator": "jle69_gmail",
+    "ceStamp": "e8d81429-0205-45c2-87ea-083196f4ae0f",
+    "id": "82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+    "config": {
+      "bucket": "dataset01",
+      "delegations": [
+        {
+          "name": "SemanticGraphIndex.DOSAccount.2",
+          "permission": "read"
+        },
+        {
+          "name": "SemanticGraphIndex.DOSAccount.2",
+          "permission": "write"
+        },
+        {
+          "name": "PPES.DosAccount",
+          "permission": "execute"
+        },
+        {
+          "name": "DatasetGovernance",
+          "permission": "read"
+        }
+      ]
+    }
+  },
+  "content_base64": "eyJAY2xhc3MiOiJPYmplY3RTdG9yYWdlIiwicmVzb3VyY2VJZCI6IkRBVEFTRVQtMDEiLCJuYW1lIjoiREFUQVNFVC0wMSIsImRlc2NyaXB0aW9uIjoiUkVTVCBBUEkg7YWM7Iqk7Yq466GcIOyDneyEse2VnCDtjIzsnbzsiqTthqDrpqzsp4AuIOyCreygnO2VoCDqsoMiLCJraW5kIjoiU3RvcmFnZSIsInR5cGUiOiJPYmplY3RTdG9yYWdlIiwicmVzb3VyY2VQYXRoIjoiU3RvcmFnZS9EQVRBU0VULTAxLmpzb24iLCJyZXNvdXJjZVVVSUQiOiI4MmQxYjE2Ny1iZjc2LTQ1NjctOWNmYi1lYjVhNTQzZmNiMzciLCJwcm9qZWN0SWQiOiJkcC1nbG9iYWwtMDAwMDAwIiwid29ya3NwYWNlSWQiOiJkdy1nbG9iYWwtMDAwMDAwLWRlZmF1bHQiLCJ0ZW5hbnQiOiJSMTEzMjEwMDUyNzA2NiIsImNyZWF0ZWQiOiIyMDI1LTA3LTA4VDA2OjA1OjU2LjQ4MDc2NVoiLCJtb2RpZmllZCI6IjIwMjUtMDctMDhUMDY6MDU6NTYuNDg1NDIxWiIsImNyZWF0b3IiOiJqbGU2OV9nbWFpbCIsImNlU3RhbXAiOiJlOGQ4MTQyOS0wMjA1LTQ1YzItODdlYS0wODMxOTZmNGFlMGYiLCJpZCI6IjgyZDFiMTY3LWJmNzYtNDU2Ny05Y2ZiLWViNWE1NDNmY2IzNyIsImNvbmZpZyI6eyJidWNrZXQiOiJkYXRhc2V0MDEiLCJkZWxlZ2F0aW9ucyI6W3sibmFtZSI6IlNlbWFudGljR3JhcGhJbmRleC5ET1NBY2NvdW50LjIiLCJwZXJtaXNzaW9uIjoicmVhZCJ9LHsibmFtZSI6IlNlbWFudGljR3JhcGhJbmRleC5ET1NBY2NvdW50LjIiLCJwZXJtaXNzaW9uIjoid3JpdGUifSx7Im5hbWUiOiJQUEVTLkRvc0FjY291bnQiLCJwZXJtaXNzaW9uIjoiZXhlY3V0ZSJ9LHsibmFtZSI6IkRhdGFzZXRHb3Zlcm5hbmNlIiwicGVybWlzc2lvbiI6InJlYWQifV19fQ==",
+  "content_length": 859,
+  "request": {
+    "method": "GET",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage/82d1b167-bf76-4567-9cfb-eb5a543fcb37",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": null
+  }
+}

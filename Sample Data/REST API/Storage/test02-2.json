@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-07-08T17:35:18.555816",
+  "status_code": 409,
+  "reason": "Conflict",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+  "headers": {
+    "content-type": "application/problem+json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 08:35:18 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {},
+  "encoding": null,
+  "elapsed_seconds": 0.015244,
+  "text": "{\"type\":\"about:blank\",\"title\":\"Conflict\",\"status\":409,\"detail\":\"Failed to create resource Resource Id TestSGI-01 already exists in workspace with id : dw-global-000000-default on the tenant : R1132100527066\",\"instance\":\"/data-factory/api/1/storage\"}",
+  "json_response": {
+    "type": "about:blank",
+    "title": "Conflict",
+    "status": 409,
+    "detail": "Failed to create resource Resource Id TestSGI-01 already exists in workspace with id : dw-global-000000-default on the tenant : R1132100527066",
+    "instance": "/data-factory/api/1/storage"
+  },
+  "content_base64": "eyJ0eXBlIjoiYWJvdXQ6YmxhbmsiLCJ0aXRsZSI6IkNvbmZsaWN0Iiwic3RhdHVzIjo0MDksImRldGFpbCI6IkZhaWxlZCB0byBjcmVhdGUgcmVzb3VyY2UgUmVzb3VyY2UgSWQgVGVzdFNHSS0wMSBhbHJlYWR5IGV4aXN0cyBpbiB3b3Jrc3BhY2Ugd2l0aCBpZCA6IGR3LWdsb2JhbC0wMDAwMDAtZGVmYXVsdCBvbiB0aGUgdGVuYW50IDogUjExMzIxMDA1MjcwNjYiLCJpbnN0YW5jZSI6Ii9kYXRhLWZhY3RvcnkvYXBpLzEvc3RvcmFnZSJ9",
+  "content_length": 249,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/storage",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Cookie": "JSESSIONID=FC8128D4437DA86BDDDC0F9E9B288AA0; SERVERID=IngestionVM_1_7026",
+      "Content-Length": "194",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "{\"@class\": \"IndexUnit\", \"name\": \"TestSGI-01\", \"description\": \"REST API \\ud14c\\uc2a4\\ud2b8\\ub85c \\uc0dd\\uc131. \\uc0ad\\uc81c\\ud560 \\uac83\", \"resourceId\": \"TestSGI-01\", \"config\": {\"datamodel\": {}}}"
+  }
+}

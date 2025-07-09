@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-08T17:46:19.739213",
+  "status_code": 500,
+  "reason": "Internal Server Error",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/objectstorage/0a28ee53-4def-4c92-ba75-87537d83185f/commit",
+  "headers": {
+    "set-cookie": "JSESSIONID=2EDBD686A59D054CD0EDE4E16DBCA350; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_0_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "content-type": "application/problem+json",
+    "transfer-encoding": "chunked",
+    "date": "Tue, 08 Jul 2025 08:46:19 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "2EDBD686A59D054CD0EDE4E16DBCA350",
+    "SERVERID": "IngestionVM_0_7026"
+  },
+  "encoding": null,
+  "elapsed_seconds": 11.727743,
+  "text": "{\"type\":\"about:blank\",\"title\":\"Internal Server Error\",\"status\":500,\"detail\":\"Object storage client Exception Failed to commit file to object storage class ObjectStorage {\\n    class Storage {\\n        class Resource {\\n            class ResourceInstance {\\n                class ResourceDefinition {\\n                    resourceId: TestDATASET-01\\n                    name: TestDATASET-01\\n                    description: REST API 테스트로 생성한 파일스토리지. 삭제할 것\\n                    kind: Storage\\n                    type: ObjectStorage\\n                    resourcePath: Storage/TestDATASET-01.json\\n                    atClass: null\\n                }\\n                resourceUUID: 0a28ee53-4def-4c92-ba75-87537d83185f\\n                projectId: dp-global-000000\\n                workspaceId: dw-global-000000-default\\n                tenant: R1132100527066\\n                created: 2025-07-08T08:35:17.406855Z\\n                modified: 2025-07-08T08:35:17.408689Z\\n                creator: jle69_gmail\\n                ceStamp: cb024ee1-2409-48df-9e92-ddd5a5b74230\\n            }\\n        }\\n        id: 0a28ee53-4def-4c92-ba75-87537d83185f\\n    }\\n    config: class ObjectStorageConfig {\\n        bucket: testdataset01\\n        delegations: [class AccountDelegation {\\n            name: SemanticGraphIndex.DOSAccount.2\\n            permission: read\\n        }, class AccountDelegation {\\n            name: SemanticGraphIndex.DOSAccount.2\\n            permission: write\\n        }, class AccountDelegation {\\n            name: PPES.DosAccount\\n            permission: execute\\n        }, class AccountDelegation {\\n            name: DatasetGovernance\\n            permission: read\\n        }]\\n    }\\n    atClass: ObjectStorage\\n}. Code : 500. Response : {\\\"errorid\\\":\\\"f437dda8-9a39-45eb-a5c2-09e94cdc3f79\\\",\\\"errormessage\\\":\\\"java.lang.Exception: Failed to decrypt; FCS Bad receipt\\\\nreceipt\\\"}\",\"instance\":\"/data-factory/api/1/objectstorage/0a28ee53-4def-4c92-ba75-87537d83185f/commit\"}",
+  "json_response": {
+    "type": "about:blank",
+    "title": "Internal Server Error",
+    "status": 500,
+    "detail": "Object storage client Exception Failed to commit file to object storage class ObjectStorage {\n    class Storage {\n        class Resource {\n            class ResourceInstance {\n                class ResourceDefinition {\n                    resourceId: TestDATASET-01\n                    name: TestDATASET-01\n                    description: REST API 테스트로 생성한 파일스토리지. 삭제할 것\n                    kind: Storage\n                    type: ObjectStorage\n                    resourcePath: Storage/TestDATASET-01.json\n                    atClass: null\n                }\n                resourceUUID: 0a28ee53-4def-4c92-ba75-87537d83185f\n                projectId: dp-global-000000\n                workspaceId: dw-global-000000-default\n                tenant: R1132100527066\n                created: 2025-07-08T08:35:17.406855Z\n                modified: 2025-07-08T08:35:17.408689Z\n                creator: jle69_gmail\n                ceStamp: cb024ee1-2409-48df-9e92-ddd5a5b74230\n            }\n        }\n        id: 0a28ee53-4def-4c92-ba75-87537d83185f\n    }\n    config: class ObjectStorageConfig {\n        bucket: testdataset01\n        delegations: [class AccountDelegation {\n            name: SemanticGraphIndex.DOSAccount.2\n            permission: read\n        }, class AccountDelegation {\n            name: SemanticGraphIndex.DOSAccount.2\n            permission: write\n        }, class AccountDelegation {\n            name: PPES.DosAccount\n            permission: execute\n        }, class AccountDelegation {\n            name: DatasetGovernance\n            permission: read\n        }]\n    }\n    atClass: ObjectStorage\n}. Code : 500. Response : {\"errorid\":\"f437dda8-9a39-45eb-a5c2-09e94cdc3f79\",\"errormessage\":\"java.lang.Exception: Failed to decrypt; FCS Bad receipt\\nreceipt\"}",
+    "instance": "/data-factory/api/1/objectstorage/0a28ee53-4def-4c92-ba75-87537d83185f/commit"
+  },
+  "content_base64": "eyJ0eXBlIjoiYWJvdXQ6YmxhbmsiLCJ0aXRsZSI6IkludGVybmFsIFNlcnZlciBFcnJvciIsInN0YXR1cyI6NTAwLCJkZXRhaWwiOiJPYmplY3Qgc3RvcmFnZSBjbGllbnQgRXhjZXB0aW9uIEZhaWxlZCB0byBjb21taXQgZmlsZSB0byBvYmplY3Qgc3RvcmFnZSBjbGFzcyBPYmplY3RTdG9yYWdlIHtcbiAgICBjbGFzcyBTdG9yYWdlIHtcbiAgICAgICAgY2xhc3MgUmVzb3VyY2Uge1xuICAgICAgICAgICAgY2xhc3MgUmVzb3VyY2VJbnN0YW5jZSB7XG4gICAgICAgICAgICAgICAgY2xhc3MgUmVzb3VyY2VEZWZpbml0aW9uIHtcbiAgICAgICAgICAgICAgICAgICAgcmVzb3VyY2VJZDogVGVzdERBVEFTRVQtMDFcbiAgICAgICAgICAgICAgICAgICAgbmFtZTogVGVzdERBVEFTRVQtMDFcbiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb246IFJFU1QgQVBJIO2FjOyKpO2KuOuhnCDsg53shLHtlZwg7YyM7J287Iqk7Yag66as7KeALiDsgq3soJztlaAg6rKDXG4gICAgICAgICAgICAgICAgICAgIGtpbmQ6IFN0b3JhZ2VcbiAgICAgICAgICAgICAgICAgICAgdHlwZTogT2JqZWN0U3RvcmFnZVxuICAgICAgICAgICAgICAgICAgICByZXNvdXJjZVBhdGg6IFN0b3JhZ2UvVGVzdERBVEFTRVQtMDEuanNvblxuICAgICAgICAgICAgICAgICAgICBhdENsYXNzOiBudWxsXG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIHJlc291cmNlVVVJRDogMGEyOGVlNTMtNGRlZi00YzkyLWJhNzUtODc1MzdkODMxODVmXG4gICAgICAgICAgICAgICAgcHJvamVjdElkOiBkcC1nbG9iYWwtMDAwMDAwXG4gICAgICAgICAgICAgICAgd29ya3NwYWNlSWQ6IGR3LWdsb2JhbC0wMDAwMDAtZGVmYXVsdFxuICAgICAgICAgICAgICAgIHRlbmFudDogUjExMzIxMDA1MjcwNjZcbiAgICAgICAgICAgICAgICBjcmVhdGVkOiAyMDI1LTA3LTA4VDA4OjM1OjE3LjQwNjg1NVpcbiAgICAgICAgICAgICAgICBtb2RpZmllZDogMjAyNS0wNy0wOFQwODozNToxNy40MDg2ODlaXG4gICAgICAgICAgICAgICAgY3JlYXRvcjogamxlNjlfZ21haWxcbiAgICAgICAgICAgICAgICBjZVN0YW1wOiBjYjAyNGVlMS0yNDA5LTQ4ZGYtOWU5Mi1kZGQ1YTViNzQyMzBcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgICBpZDogMGEyOGVlNTMtNGRlZi00YzkyLWJhNzUtODc1MzdkODMxODVmXG4gICAgfVxuICAgIGNvbmZpZzogY2xhc3MgT2JqZWN0U3RvcmFnZUNvbmZpZyB7XG4gICAgICAgIGJ1Y2tldDogdGVzdGRhdGFzZXQwMVxuICAgICAgICBkZWxlZ2F0aW9uczogW2NsYXNzIEFjY291bnREZWxlZ2F0aW9uIHtcbiAgICAgICAgICAgIG5hbWU6IFNlbWFudGljR3JhcGhJbmRleC5ET1NBY2NvdW50LjJcbiAgICAgICAgICAgIHBlcm1pc3Npb246IHJlYWRcbiAgICAgICAgfSwgY2xhc3MgQWNjb3VudERlbGVnYXRpb24ge1xuICAgICAgICAgICAgbmFtZTogU2VtYW50aWNHcmFwaEluZGV4LkRPU0FjY291bnQuMlxuICAgICAgICAgICAgcGVybWlzc2lvbjogd3JpdGVcbiAgICAgICAgfSwgY2xhc3MgQWNjb3VudERlbGVnYXRpb24ge1xuICAgICAgICAgICAgbmFtZTogUFBFUy5Eb3NBY2NvdW50XG4gICAgICAgICAgICBwZXJtaXNzaW9uOiBleGVjdXRlXG4gICAgICAgIH0sIGNsYXNzIEFjY291bnREZWxlZ2F0aW9uIHtcbiAgICAgICAgICAgIG5hbWU6IERhdGFzZXRHb3Zlcm5hbmNlXG4gICAgICAgICAgICBwZXJtaXNzaW9uOiByZWFkXG4gICAgICAgIH1dXG4gICAgfVxuICAgIGF0Q2xhc3M6IE9iamVjdFN0b3JhZ2Vcbn0uIENvZGUgOiA1MDAuIFJlc3BvbnNlIDoge1wiZXJyb3JpZFwiOlwiZjQzN2RkYTgtOWEzOS00NWViLWE1YzItMDllOTRjZGMzZjc5XCIsXCJlcnJvcm1lc3NhZ2VcIjpcImphdmEubGFuZy5FeGNlcHRpb246IEZhaWxlZCB0byBkZWNyeXB0OyBGQ1MgQmFkIHJlY2VpcHRcXG5yZWNlaXB0XCJ9IiwiaW5zdGFuY2UiOiIvZGF0YS1mYWN0b3J5L2FwaS8xL29iamVjdHN0b3JhZ2UvMGEyOGVlNTMtNGRlZi00YzkyLWJhNzUtODc1MzdkODMxODVmL2NvbW1pdCJ9",
+  "content_length": 2025,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/objectstorage/0a28ee53-4def-4c92-ba75-87537d83185f/commit",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "22",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "{\"receipt\": \"receipt\"}"
+  }
+}
