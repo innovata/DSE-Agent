@@ -6,6 +6,8 @@
 
 
 import os, sys 
+import pprint 
+pp = pprint.PrettyPrinter(indent=2)
 
 
 import requests 
@@ -38,16 +40,53 @@ DB_NAME = os.environ["PROJECT_DB_NAME"]
 
 
 
+def print_response(response):
+    print("\n응답코드-->", response.status_code)
+    if response.status_code > 399:
+        print("\n\n응답코드가 2xx 또는 3xx 대역이 아닐 경우 아래와 같이 표시됩니다-->")
+        pp.pprint(response.__dict__)
+    return response
+
+
+
+
 class Storages:
 
-    url = f"{REST_API_URL}/resources/v1/storage"
+    _url = f"{REST_API_URL}/resources/v1/storage"
 
     def __init__(self):
         self.model = client[DB_NAME][self.__class__.__name__]
 
+    # 스토리지 생성
+    def create(
+        self,
+        stype:str, # 스토리지타입: "ObjectStorage", "IndexUnit" 
+        name:str,
+        description:str="",
+        config:dict=None,
+    ):
+
+        if stype == 'ObjectStorage':
+            config = config if config else {}
+        elif stype == 'IndexUnit':
+            # SGI 는 반드시 config.datamodel 필드를 추가
+            config = config if config else {"datamodel": {}} 
+
+        res = sess.post(
+            self._url,
+            json={
+                "@class": stype,
+                "name": name,
+                "description": description,
+                "resourceId": name,
+                "config": config,
+            }
+        )
+        return print_response(res)
+
     # 모든 스토리지 가져오기 & DB저장
     def get_n_save(self):
-        res = sess.get(self.url)
+        res = sess.get(self._url)
         data = res.json()['cards']
         self.model.drop()
         self.model.insert_many(data)
@@ -55,7 +94,7 @@ class Storages:
     # 스토리지 검색-1
     def search_by_name(self, name:str, workspace_id:str="dw-global-000000-default"):
         res = sess.post(
-            url=f"{self.url}/filter",
+            url=f"{self._url}/filter",
             json={
                 "types": [
                     "IndexUnit",
@@ -67,24 +106,25 @@ class Storages:
                 "workspaceId": workspace_id,
             }
         )
+        return print_response(res)
 
     # 스토리지 검색-2
     def search_by_uuid(self, resource_uuid):
         res = sess.get(
-            url=f"{self.url}/{resource_uuid}"
+            url=f"{self._url}/{resource_uuid}"
         )
         pass
     
     # 스토리지 삭제
     def delete(self, resource_uuid):
         res = sess.delete(
-            url=f"{self.url}/{resource_uuid}"
+            url=f"{self._url}/{resource_uuid}"
         )
 
     # 스토리지 업데이트
     def update(self, resource_uuid):
         res = sess.put(
-            url=f"{self.url}/{resource_uuid}",
+            url=f"{self._url}/{resource_uuid}",
             json={
 
             }
@@ -93,7 +133,7 @@ class Storages:
     # 스토리지 Import
     def import_storage(self, resource_uuid):
         res = sess.post(
-            url=f"{self.url}/import",
+            url=f"{self._url}/import",
             json={
 
             }
@@ -102,13 +142,13 @@ class Storages:
     # 스토리지 Export
     def export_storage(self, resource_uuid):
         res = sess.get(
-            url=f"{self.url}/{resource_uuid}/export"
+            url=f"{self._url}/{resource_uuid}/export"
         )
 
     # 스토리지 비움
     def clean_storage(self, resource_uuid):
         res = sess.get(
-            url=f"{self.url}/{resource_uuid}/clear"
+            url=f"{self._url}/{resource_uuid}/clear"
         )
 
 
@@ -179,10 +219,65 @@ class ObjectStorage:
         pass 
 
 
+
+def data_transform_01(action:str, data:list)->list:
+    jsondata = []
+    for d in data:
+        jsondata.append({
+            "action": action,
+            "item": d
+        })
+    return jsondata 
+
+
 class SemanticGraphIndex:
+
+    _url = f"{REST_API_URL}/resources/v1/indexunit"
 
     def __init__(self):
         pass
+
+    def ingest(self, resourceUUID:str, data:list):
+        res = sess.post(
+            url=f"{self._url}/{resourceUUID}/ingest",
+            json=data_transform_01("AddOrReplaceItem", data)
+        )
+        return print_response(res) 
+
+    def notification(self, resourceUUID):
+        res = sess.get(
+            url=f"{self._url}/{resourceUUID}/notification",
+        )
+        return print_response(res) 
+
+    def validateItemsEvent(self, resourceUUID):
+        res = sess.post(
+            url=f"{self._url}/{resourceUUID}/validateItemsEvent",
+            json=["null"]
+        )
+        return print_response(res) 
+
+    def get_uri(self, resourceUUID):
+        res = sess.get(
+            url=f"{self._url}/{resourceUUID}/uri",
+        )
+        return print_response(res)
+
+    def class_count(self, resourceUUID:str, pkg_name:str, class_name_li:list):
+        class_name_li = [f"{pkg_name}.{elem}" for elem in class_name_li]
+        res = sess.get(
+            url=f"{self._url}/{resourceUUID}/class/count",
+            params={'classNameList': class_name_li, 'offset': 0, 'limit':10}
+        )
+        return print_response(res)
+
+    def get_index(self, sgi_name:str):
+        res = sess.get(
+            url=f"{self._url}/name/{sgi_name}"
+        )
+        return print_response(res) 
+
+    
 
 
 class Pipeline:

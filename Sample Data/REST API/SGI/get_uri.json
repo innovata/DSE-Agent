@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-07-09T16:41:28.415083",
+  "status_code": 200,
+  "reason": "OK",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/uri",
+  "headers": {
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 09 Jul 2025 07:41:28 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {},
+  "encoding": "utf-8",
+  "elapsed_seconds": 14.675257,
+  "text": "{\"uris\":[]}",
+  "json_response": {
+    "uris": []
+  },
+  "content_base64": "eyJ1cmlzIjpbXX0=",
+  "content_length": 11,
+  "request": {
+    "method": "GET",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/uri",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Cookie": "JSESSIONID=03696166F7B1BA18F4B9297F8FA4A9CA; SERVERID=IngestionVM_0_7026",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": null
+  }
+}

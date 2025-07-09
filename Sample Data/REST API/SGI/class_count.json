@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-07-09T16:54:05.510212",
+  "status_code": 200,
+  "reason": "OK",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/class/count?classNameList=pkg.TestClass-01",
+  "headers": {
+    "set-cookie": "JSESSIONID=E937B5D2B3DBF0EA26497E0BA27249D7; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_1_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 09 Jul 2025 07:54:05 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "E937B5D2B3DBF0EA26497E0BA27249D7",
+    "SERVERID": "IngestionVM_1_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 68.545815,
+  "text": "{}",
+  "json_response": {},
+  "content_base64": "e30=",
+  "content_length": 2,
+  "request": {
+    "method": "GET",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/class/count?classNameList=pkg.TestClass-01",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": null
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-07-09T16:41:13.733397",
+  "status_code": 400,
+  "reason": "Bad Request",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/validateItemsEvent",
+  "headers": {
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 09 Jul 2025 07:41:13 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {},
+  "encoding": "utf-8",
+  "elapsed_seconds": 0.012071,
+  "text": "{\"title\":\"Http Message Not Readable\",\"status\":400,\"detail\":\"JSON parse error: Could not resolve subtype of [simple type, class com.ds.apollo.dfs.generated.model.AddOrReplaceItem]: missing type id property 'action'\",\"instance\":\"uri=/data-factory/api/1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/validateItemsEvent\"}",
+  "json_response": {
+    "title": "Http Message Not Readable",
+    "status": 400,
+    "detail": "JSON parse error: Could not resolve subtype of [simple type, class com.ds.apollo.dfs.generated.model.AddOrReplaceItem]: missing type id property 'action'",
+    "instance": "uri=/data-factory/api/1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/validateItemsEvent"
+  },
+  "content_base64": "eyJ0aXRsZSI6Ikh0dHAgTWVzc2FnZSBOb3QgUmVhZGFibGUiLCJzdGF0dXMiOjQwMCwiZGV0YWlsIjoiSlNPTiBwYXJzZSBlcnJvcjogQ291bGQgbm90IHJlc29sdmUgc3VidHlwZSBvZiBbc2ltcGxlIHR5cGUsIGNsYXNzIGNvbS5kcy5hcG9sbG8uZGZzLmdlbmVyYXRlZC5tb2RlbC5BZGRPclJlcGxhY2VJdGVtXTogbWlzc2luZyB0eXBlIGlkIHByb3BlcnR5ICdhY3Rpb24nIiwiaW5zdGFuY2UiOiJ1cmk9L2RhdGEtZmFjdG9yeS9hcGkvMS9pbmRleHVuaXQvNWJiODdlMTEtM2E4Ny00MmRlLTljNmMtNDJiYmI5MmVkNzE2L3ZhbGlkYXRlSXRlbXNFdmVudCJ9",
+  "content_length": 318,
+  "request": {
+    "method": "POST",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/5bb87e11-3a87-42de-9c6c-42bbb92ed716/validateItemsEvent",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Cookie": "JSESSIONID=03696166F7B1BA18F4B9297F8FA4A9CA; SERVERID=IngestionVM_0_7026",
+      "Content-Length": "8",
+      "Content-Type": "application/json",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": "[\"null\"]"
+  }
+}

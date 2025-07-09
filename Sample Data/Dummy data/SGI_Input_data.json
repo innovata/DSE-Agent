@@ -1,0 +1,52 @@
+[
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-00",
+        "_text": "This is a test text for ingestion-00"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-01",
+        "_text": "This is a test text for ingestion-01"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-02",
+        "_text": "This is a test text for ingestion-02"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-03",
+        "_text": "This is a test text for ingestion-03"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-04",
+        "_text": "This is a test text for ingestion-04"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-05",
+        "_text": "This is a test text for ingestion-05"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-06",
+        "_text": "This is a test text for ingestion-06"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-07",
+        "_text": "This is a test text for ingestion-07"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-08",
+        "_text": "This is a test text for ingestion-08"
+    },
+    {
+        "class": "pkg.TestClass-01",
+        "title": "Test title-09",
+        "_text": "This is a test text for ingestion-09"
+    }
+]

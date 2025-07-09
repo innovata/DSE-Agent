@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-09T16:59:58.509351",
+  "status_code": 200,
+  "reason": "OK",
+  "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/name/TestSGI-01",
+  "headers": {
+    "set-cookie": "JSESSIONID=05D13D34EB149DB4A4814834757F56D0; Path=/data-factory; HttpOnly;SameSite=None;Secure, SERVERID=IngestionVM_1_7026; path=/; HttpOnly; Secure; SameSite=None",
+    "vary": "accept-encoding",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 09 Jul 2025 07:59:57 GMT",
+    "server": "Microsoft-IIS/7.0"
+  },
+  "cookies": {
+    "JSESSIONID": "05D13D34EB149DB4A4814834757F56D0",
+    "SERVERID": "IngestionVM_1_7026"
+  },
+  "encoding": "utf-8",
+  "elapsed_seconds": 22.728223,
+  "text": "{\"@class\":\"IndexUnit\",\"resourceId\":\"TestSGI-01\",\"name\":\"TestSGI-01\",\"description\":\"REST API 테스트로 생성. 삭제할 것\",\"kind\":\"Storage\",\"type\":\"IndexUnit\",\"resourcePath\":\"Storage/TestSGI-01.json\",\"resourceUUID\":\"5bb87e11-3a87-42de-9c6c-42bbb92ed716\",\"projectId\":\"dp-global-000000\",\"workspaceId\":\"dw-global-000000-default\",\"tenant\":\"R1132100527066\",\"created\":\"2025-07-08T06:34:03.071161Z\",\"modified\":\"2025-07-09T07:46:07.89183Z\",\"creator\":\"jle69_gmail\",\"ceStamp\":\"62695bae-3074-4bbd-abfb-afc180d6b4a7\",\"id\":\"5bb87e11-3a87-42de-9c6c-42bbb92ed716\",\"config\":{\"datamodel\":{\"classes\":[{\"name\":\"TestClass-01\",\"parents\":[],\"pkg\":\"pkg\",\"attributes\":[{\"name\":\"title\",\"type\":{\"dataType\":\"String\",\"dataStructure\":\"Singleton\"}},{\"name\":\"_text\",\"type\":{\"dataType\":\"String\",\"dataStructure\":\"Singleton\"},\"annotation\":{}}]}]}}}",
+  "json_response": {
+    "@class": "IndexUnit",
+    "resourceId": "TestSGI-01",
+    "name": "TestSGI-01",
+    "description": "REST API 테스트로 생성. 삭제할 것",
+    "kind": "Storage",
+    "type": "IndexUnit",
+    "resourcePath": "Storage/TestSGI-01.json",
+    "resourceUUID": "5bb87e11-3a87-42de-9c6c-42bbb92ed716",
+    "projectId": "dp-global-000000",
+    "workspaceId": "dw-global-000000-default",
+    "tenant": "R1132100527066",
+    "created": "2025-07-08T06:34:03.071161Z",
+    "modified": "2025-07-09T07:46:07.89183Z",
+    "creator": "jle69_gmail",
+    "ceStamp": "62695bae-3074-4bbd-abfb-afc180d6b4a7",
+    "id": "5bb87e11-3a87-42de-9c6c-42bbb92ed716",
+    "config": {
+      "datamodel": {
+        "classes": [
+          {
+            "name": "TestClass-01",
+            "parents": [],
+            "pkg": "pkg",
+            "attributes": [
+              {
+                "name": "title",
+                "type": {
+                  "dataType": "String",
+                  "dataStructure": "Singleton"
+                }
+              },
+              {
+                "name": "_text",
+                "type": {
+                  "dataType": "String",
+                  "dataStructure": "Singleton"
+                },
+                "annotation": {}
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "content_base64": "eyJAY2xhc3MiOiJJbmRleFVuaXQiLCJyZXNvdXJjZUlkIjoiVGVzdFNHSS0wMSIsIm5hbWUiOiJUZXN0U0dJLTAxIiwiZGVzY3JpcHRpb24iOiJSRVNUIEFQSSDthYzsiqTtirjroZwg7IOd7ISxLiDsgq3soJztlaAg6rKDIiwia2luZCI6IlN0b3JhZ2UiLCJ0eXBlIjoiSW5kZXhVbml0IiwicmVzb3VyY2VQYXRoIjoiU3RvcmFnZS9UZXN0U0dJLTAxLmpzb24iLCJyZXNvdXJjZVVVSUQiOiI1YmI4N2UxMS0zYTg3LTQyZGUtOWM2Yy00MmJiYjkyZWQ3MTYiLCJwcm9qZWN0SWQiOiJkcC1nbG9iYWwtMDAwMDAwIiwid29ya3NwYWNlSWQiOiJkdy1nbG9iYWwtMDAwMDAwLWRlZmF1bHQiLCJ0ZW5hbnQiOiJSMTEzMjEwMDUyNzA2NiIsImNyZWF0ZWQiOiIyMDI1LTA3LTA4VDA2OjM0OjAzLjA3MTE2MVoiLCJtb2RpZmllZCI6IjIwMjUtMDctMDlUMDc6NDY6MDcuODkxODNaIiwiY3JlYXRvciI6ImpsZTY5X2dtYWlsIiwiY2VTdGFtcCI6IjYyNjk1YmFlLTMwNzQtNGJiZC1hYmZiLWFmYzE4MGQ2YjRhNyIsImlkIjoiNWJiODdlMTEtM2E4Ny00MmRlLTljNmMtNDJiYmI5MmVkNzE2IiwiY29uZmlnIjp7ImRhdGFtb2RlbCI6eyJjbGFzc2VzIjpbeyJuYW1lIjoiVGVzdENsYXNzLTAxIiwicGFyZW50cyI6W10sInBrZyI6InBrZyIsImF0dHJpYnV0ZXMiOlt7Im5hbWUiOiJ0aXRsZSIsInR5cGUiOnsiZGF0YVR5cGUiOiJTdHJpbmciLCJkYXRhU3RydWN0dXJlIjoiU2luZ2xldG9uIn19LHsibmFtZSI6Il90ZXh0IiwidHlwZSI6eyJkYXRhVHlwZSI6IlN0cmluZyIsImRhdGFTdHJ1Y3R1cmUiOiJTaW5nbGV0b24ifSwiYW5ub3RhdGlvbiI6e319XX1dfX19",
+  "content_length": 819,
+  "request": {
+    "method": "GET",
+    "url": "https://r1132100527066-apk2-sgi.3dexperience.3ds.com:443/data-factory/resources/v1/indexunit/name/TestSGI-01",
+    "headers": {
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Authorization": "Basic NTlhMDMwMDQtYmY3MS00YWE2LTlmOTItMGQ5OWUyZjdlMGMwOlEqcnonRz84V2c/YG0zc2wvLV8zMHpseA=="
+    },
+    "body": null
+  }
+}
