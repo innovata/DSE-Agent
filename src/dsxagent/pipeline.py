@@ -5,16 +5,16 @@ import os
 import pandas as pd
 
 
-import fileio
+from ipylib import ifile 
 
 
 def generate_summary_csv(read_dir, write_dir):
-    jsons = fileio.ifile.get_files(read_dir, type='json', fullpath=True)
+    jsons = ifile.get_files(read_dir, type='json', fullpath=True)
     data = []
     print('\n\n')
     for file in sorted(jsons):
         print('PATH:', file)
-        js = fileio.ifile.read_jsonfile(file)
+        js = ifile.read_jsonfile(file)
         # print('JSON:', js)
         pipe_name = js['pipeline']['name']
         # print('PIPELINE:', pipe_name)
@@ -25,7 +25,7 @@ def generate_summary_csv(read_dir, write_dir):
     
     df = pd.DataFrame(data)
     csv_file = os.path.join(write_dir, "DataPipelineRelations.csv")
-    fileio.save_as_csv(csv_file, df)
+    
 
 
 def convert_into_tis_json_format(text, title, srcfile, **kwargs):

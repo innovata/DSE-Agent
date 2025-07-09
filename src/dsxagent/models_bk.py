@@ -12,7 +12,7 @@ import numpy as np
 
 
 from dsxagent import dflib 
-import fileio
+from ipylib import ifile 
 
 
 # EXCEL, CSV 데이터 파일로부터 데이터스키마를 정의하고,
@@ -30,7 +30,7 @@ def generate_datamodel_json(json_file=None):
     if json_file is None:
         pass 
     else:
-        js = fileio.ifile.read_jsonfile(json_file)
+        js = ifile.read_jsonfile(json_file)
         js['storage']['config']['datamodel']['classes']
     return 
 
@@ -85,7 +85,6 @@ def write_schema(csv_file):
     filename = os.path.basename(csv_file)
     sch_file = os.path.join(path, f"_Schema_{filename}")
     print('스키마파일:', sch_file)
-    fileio.save_as_csv(sch_file, df)
 
 
 
