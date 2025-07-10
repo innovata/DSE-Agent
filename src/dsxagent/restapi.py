@@ -10,9 +10,6 @@ import pprint
 pp = pprint.PrettyPrinter(indent=2)
 
 
-import requests 
-from pymongo import MongoClient 
-client = MongoClient()
 
 
 import requests
@@ -27,16 +24,24 @@ from ipylib import ifile
 
 
 
+
+
+
+############################################################
+# 모듈 전역변수 셋업
+############################################################
+
+TENANT_URI = os.environ['3DX_PLATFORM_TENANT_URI']
+REST_API_URL = TENANT_URI + "/data-factory"
+
 d = ifile.read_jsonfile(os.environ['CLM_AGENT_CREDENTIAL_PATH'])
 sess = requests.Session()
 sess.auth = (d['Agent ID'], d['Agent Password'])
 
 
-TENANT_URI = os.environ['3DX_PLATFORM_TENANT_URI']
-REST_API_URL = TENANT_URI + "/data-factory"
 
 
-DB_NAME = os.environ["PROJECT_DB_NAME"]
+from dsxagent import models 
 
 
 
@@ -48,14 +53,24 @@ def print_response(response):
     return response
 
 
+# 모든 스토리지 가져오기 & DB저장
+def get_n_save_all_storages():
+    api = Storages()
+    res = api.get()
+    data = res.json()['cards']
+    model = models.Storages()
+    model.drop()
+    model.insert_many(data)
+
 
 
 class Storages:
 
     _url = f"{REST_API_URL}/resources/v1/storage"
 
-    def __init__(self):
-        self.model = client[DB_NAME][self.__class__.__name__]
+    # 스토리지 모든 목록 가져오기
+    def get(self):
+        return sess.get(self._url)
 
     # 스토리지 생성
     def create(
@@ -83,13 +98,6 @@ class Storages:
             }
         )
         return print_response(res)
-
-    # 모든 스토리지 가져오기 & DB저장
-    def get_n_save(self):
-        res = sess.get(self._url)
-        data = res.json()['cards']
-        self.model.drop()
-        self.model.insert_many(data)
 
     # 스토리지 검색-1
     def search_by_name(self, name:str, workspace_id:str="dw-global-000000-default"):
@@ -166,7 +174,7 @@ class ObjectStorage:
     # Storage	
     # ObjectStorage
 
-    def __init__(self, resourceUUID="0a28ee53-4def-4c92-ba75-87537d83185f"):
+    def __init__(self, resourceUUID:str):
         self.resourceUUID = resourceUUID
 
     def multicheckin(self):

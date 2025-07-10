@@ -1,7 +1,6 @@
-ipykernel
 setuptools
-pandas
+requests 
+pymongo
 openpyxl
 xlrd
-msoffcrypto-tool
-pymongo 
+tqdm 

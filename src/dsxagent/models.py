@@ -1,142 +1,121 @@
 # -*- coding: utf-8 -*-
-# Data Factory Studio / SGI Data Modeling 기능 
 
 
 
-import os, sys 
-import pprint 
-pp = pprint.PrettyPrinter(indent=2)
-import json 
+import os 
+
+
+from pymongo import MongoClient
+client = MongoClient()
 
 
 
 
-from dsxagent import restapi 
+
+
+def print_db_error(e, **kwargs):
+    # print(f"\nERROR | {e}", kwargs)
+    pass 
 
 
 
-class SemanticGraphIndex:
+class _Collection_:
 
-    def __init__(self):
-        self.schema = None 
+    def __init__(self, coll_name:str=None):
+        self.db_name = os.environ["PROJECT_DB_NAME"]
+        if coll_name is None:
+            coll_name = self.__class__.__name__
+        self.coll_name = coll_name
+        self.collection = client[self.db_name][self.coll_name]
 
-    def create_storage(
-            self,
-            name:str="TestSGI-02", # SGI명 
-            description:str="REST API 테스트로 생성한 파일스토리지. 삭제할 것",
-            data_file:str=None, # 저장할 데이터가 있는 파일 절대경로 
-        ):
-        if data_file:
-            autoschema = AutoSchema()
-            config = autoschema.gen_schema(data_file)
+    @property
+    def name(self):
+        return self.collection.name
+    
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-            if config:
-                api = restapi.Storages()
-                api.create(
-                    stype="IndexUnit",
-                    name=name,
-                    description=description,
-                    config=config
+    def find(self, filter={}, proj={}, **kwargs):
+        try:
+            return self.collection.find(filter, proj, **kwargs)
+        except Exception as e:
+            print_db_error(e, filter=filter, proj=proj, **kwargs)
+    
+    def distinct(self, key, filter={}):
+        try:
+            return self.collection.distinct(key, filter=filter)
+        except Exception as e:
+            print_db_error(e, key=key, filter=filter)
+
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    def insert_one(self, doc:dict):
+        try:
+            return self.collection.insert_one(doc)
+        except Exception as e:
+            print_db_error(e)
+
+    def insert_many(self, data:list):
+        try:
+            return self.collection.insert_many(data)
+        except Exception as e:
+            print_db_error(e)
+
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+    def update_one(self, filter, update, upsert=False):
+        try:
+            return self.collection.update_one(filter, update, upsert=upsert)
+        except Exception as e:
+            print_db_error(e, filter=filter, update=update, upsert=upsert)
+
+    def update_many(self, filter, update, upsert=False):
+        try:
+            return self.collection.update_many(filter, update, upsert=upsert)
+        except Exception as e:
+            print_db_error(e, filter=filter, update=update, upsert=upsert)
+
+    # 자주 사용하는 함수라서 커스텀한 메소드 
+    def upsert_many(self, data, filter={}):
+        try:
+            for d in data:
+                rv = self.collection.update_many(
+                    filter,
+                    {'$set': d},
+                    upsert=True
                 )
-            else:
-                print("\nERROR | 스키마를 먼저 정의하세요.")
+        except Exception as e:
+            print_db_error(e, data=data, filter=filter)
 
-    # 클라우드상에 정의된 config 다운로드 
-    def export_config(self):
-        pass 
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    def drop(self):
+        try:
+            return self.collection.drop()
+        except Exception as e:
+            print_db_error(e)
+
+    def delete_one(self, filter):
+        try:
+            return self.collection.delete_one(filter)
+        except Exception as e:
+            print_db_error(e)
+
+    def delete_many(self, filter):
+        try:
+            return self.collection.delete_many(filter)
+        except Exception as e:
+            print_db_error(e)
 
 
-class AutoGenSchema:
+
+
+
+class Storages(_Collection_):
 
     def __init__(self):
-        pass
-
-    def gen(self, file):
-        with open(file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-
-        doc = data[0]
-        _class = doc.pop('class')
-        pkg_name, cls_name = _class.split('.')
-        sgicls = SGIClass(pkg_name, cls_name)
-        for k,v in doc.items():
-            sgicls.add_attr(k, "String")
-        official_class = sgicls.gen_class_definition_for_config()
-
-        schema = {'datamodel': {"classes": [official_class]}}
-        pp.pprint(schema)
-        return schema 
-    
-    def parse_json_data(self, data):
-        keys = list(data[0])
-        values = {k: [] for k in keys}
-        for d in data:
-            for i in range(len(keys)):
-                key = keys[0]
-                val = d[key]
-                values[key].append(str(type(val)))
-        
-        # Counter 객체사용 
-        # 가장 많은 Dtype 을 선택해서, 확정
-        # {key: dtype} 형식으로 반환 
-        
+        super().__init__()
 
 
 
-class SGIClass:
-    # 데이터구조 
-    {
-        "name": "TestClass-01",
-        "parents": [],
-        "pkg": "pkg",
-        "attributes": [
-            {
-                "name": "title",
-                "type": {
-                    "dataType": "String",
-                    "dataStructure": "Singleton"
-                }
-            },
-            {
-                "name": "_text",
-                "type": {
-                    "dataType": "String",
-                    "dataStructure": "Singleton"
-                },
-                "annotation": {}
-            }
-        ]
-    }
 
-    def __init__(self, pkg_name, cls_name):
-        self.pkg_name = pkg_name 
-        self.cls_name = cls_name 
-        self.attrs = []
 
-    def add_attr(self, name, dtype):
-        self.attrs.append((name, dtype))
-
-    # REST API로 클래스 생성을 요청할 데이터포멧으로 구성
-    def gen_class_definition_for_config(self):
-        attrs = []
-        for name, dtype in self.attrs:
-            attrs.append({
-                "name": name,
-                "type": {
-                    "dataType": dtype,
-                    "dataStructure": "Singleton"
-                }
-            })
-        
-        return {
-            "name": self.cls_name,
-            "parents": [],
-            "pkg": self.pkg_name,
-            "attributes": attrs
-        }
-    
-    # 파일을 읽어들여 스키마를 구성한다
-    def gen_schema(self, file):
-        ags = AutoGenSchema()
-
-        pass 
